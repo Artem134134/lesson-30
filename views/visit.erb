@@ -8,7 +8,7 @@
    $('#datetimepicker').datetimepicker();
 
    // $('.ccc').css('background-color','#add8e6');  
-   // $('#aaa').css('background-color','#b0e0e6');
+    $('#aaa').css('background-color','#b0e0e6');
   });
   //It's right for jQuery !
   </script>
@@ -29,6 +29,14 @@
     <label>Когда вас ждать?</label>
     <input id="datetimepicker" name="client[datestamp]" type="text" class="form-control" placeholder="Введите дату и время" value="<%= @c.datestamp %>">
   </div>
+
+   <select id="aaa" class="form-select " name="barber" aria-label="Default select example">
+   <option selected>Выберите прихмахера</option> --> -->
+  <option <%=@barber == 'Walter White' ? 'selected': '' %>> Walter White </option> -->
+  <option <%=@barber == 'Jessie Pinkman' ? 'selected': '' %>> Jessie Pinkman</option> -->
+  <option <%=@barber == 'Gus Fring' ? 'selected': '' %>>Gus Fring</option> -->
+
+</select>
    
 
   <div class="form-group">
