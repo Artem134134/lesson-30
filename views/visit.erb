@@ -7,13 +7,11 @@
     $('#color').simplecolorpicker();
    $('#datetimepicker').datetimepicker();
 
-    $('.ccc').css('background-color','#add8e6');  
-    $('#aaa').css('background-color','#b0e0e6');
+   // $('.ccc').css('background-color','#add8e6');  
+   // $('#aaa').css('background-color','#b0e0e6');
   });
   //It's right for jQuery !
   </script>
-
-
 
 <form action="/visit" method="POST" role="form">
 
@@ -31,16 +29,6 @@
     <label>Когда вас ждать?</label>
     <input id="datetimepicker" name="client[datestamp]" type="text" class="form-control" placeholder="Введите дату и время" value="<%= @c.datestamp %>">
   </div>
-
-   <select id="aaa" class="form-select " name="barmen" aria-label="Default select example">
-   <option selected>Выберите бармена</option> --> -->
-  <option <%=@barmen == 'Walter White' ? 'selected': '' %>> Walter White </option> -->
-  <option <%=@barmen == 'Jessie Pinkman' ? 'selected': '' %>> Jessie Pinkman</option> -->
-  <option <%=@barmen == 'Gus Fring' ? 'selected': '' %>>Gus Fring</option> 
-
-</select>
-
-
    
 
   <div class="form-group">
